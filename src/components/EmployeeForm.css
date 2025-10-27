@@ -1,0 +1,70 @@
+/* Reference any styles from the course EMS repo here as needed. */
+
+:root { --space: 0.75rem; }
+
+.employee-form__wrapper {
+  max-width: 640px;
+  margin: 2rem auto;
+  padding: 1.25rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,.06);
+}
+
+.employee-form__heading {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+}
+
+.employee-form {
+  display: block;
+}
+
+.employee-form__group {
+  display: grid;
+  gap: .375rem;
+  margin-bottom: 1rem;
+}
+
+.employee-form__group label {
+  font-weight: 600;
+}
+
+.employee-form__group input {
+  padding: .625rem .75rem;
+  border: 1px solid #dadde1;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.employee-form__group input:focus {
+  outline: 3px solid rgba(11, 92, 255, .25);
+  border-color: #80bdff;
+}
+
+.employee-form__actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: .5rem;
+}
+
+.btn {
+  padding: .7rem 1rem;
+  border: 0;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background: #0b5cff;
+  color: #fff;
+}
+
+.error { color: #b42318; margin: 0; }
+.hint { color: #6b7280; }
+
+@media (max-width: 480px) {
+  .employee-form__wrapper { margin: 1rem; padding: 1rem; }
+  .employee-form__heading { font-size: 1.25rem; }
+}
