@@ -53,7 +53,7 @@ function App() {
         </nav>
 
         <Routes>
-          {/* Home: form + saved list */}
+          {/* Home: form + saved list + band video */}
           <Route
             path="/"
             element={
@@ -76,6 +76,40 @@ function App() {
                 </div>
 
                 <EmployeeList employees={employees} />
+
+                {/* Latest band video section */}
+                <section style={{ marginTop: "2rem" }}>
+                  <h2>Latest Band Video</h2>
+                  <p style={{ marginTop: 4, marginBottom: 12 }}>
+                    Watch the latest video from our band directly in the app.
+                  </p>
+
+                  <div
+                    style={{
+                      position: "relative",
+                      paddingBottom: "56.25%", // 16:9 aspect ratio
+                      height: 0,
+                      overflow: "hidden",
+                      borderRadius: 12,
+                    }}
+                  >
+                    <iframe
+                      src="https://www.youtube.com/embed/VYBQtFQAi98?si=mAipFwwU-IVytsog"
+                      title="Latest Band Video"
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        width: "100%",
+                        height: "100%",
+                        border: 0,
+                      }}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                      referrerPolicy="strict-origin-when-cross-origin"
+                    />
+                  </div>
+                </section>
               </>
             }
           />
